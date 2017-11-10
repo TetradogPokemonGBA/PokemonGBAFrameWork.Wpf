@@ -60,13 +60,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScriptViwer.xaml.cs">
-      <DependentUpon>ScriptViwer.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Script\ScriptViwer.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="ScriptViwer.xaml" />
+    <Folder Include="Script" />
+    <Folder Include="Script\Comandos" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Script\ScriptViwer.xaml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
